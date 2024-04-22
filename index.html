@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="weather-app">
+        <header>
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Enter a city..." required class="search-form-input"
+                    id="search-form-input" />
+                <input type="submit" value="search" class="submit-form-input" />
+            </form>
+        </header>
+        <main>
+            <div class="weather-data">
+                <div>
+                    <h1 class="weather-app-city" id="city">Paris</h1>
+                    <p class="weather-app-details">
+                        <span id="current-date">Monday 20:26</span>,<span id="description"></span>
+                        <br />
+                        Humidity: <strong id="humidity">66%</strong>, wind: <strong id="wind-speed">3.13km/h</strong>
+                    </p>
+                </div>
+                <div class="weather-temp-container">
+                    <div id="icon">
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+                            class="forecast-icon" />
+                    </div>
+                    <div class="weather-app-temperature">
+                        <div class="weather-app-value" id="temperature">12</div>
+                        <div class="weather-app-unit">°C</div>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            This project was coded by
+            <a href="https://github.com/ZandileMajozi12" target="_blank"> Zandile Majozi</a> is built on <a
+                href="https://github.com/ZandileMajozi12/my-weather-project" target="_blank"> GitHub</a> and hosted on
+            <a href="https://app.netlify.com/sites/wecodeschoolweather/overview " target="_blank">Netlify </a>
+        </footer>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
