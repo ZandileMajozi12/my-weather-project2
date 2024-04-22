@@ -6,3 +6,4 @@ $ add index.js file from src folder
 $ add basic js code and api coding in index.js
 $ add index.html file
 $ add index.html basic code
+$ add link on html for netlify
