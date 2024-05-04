@@ -8,3 +8,4 @@ $ add index.html file
 $ add index.html basic code
 $ add link on html for netlify
 $ inject the forecast HTML form Javascript
+$ added the forecast function in javascript and called it
